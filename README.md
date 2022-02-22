@@ -1,6 +1,6 @@
 # vue.js 3 Todo List Uygulaması
 
-![image](https://user-images.githubusercontent.com/26199757/155226537-5ef01d76-e150-4f1e-9481-f1fdf473b7b9.png)
+![image](https://user-images.githubusercontent.com/26199757/155228394-884967c7-368b-4c03-8f9c-ad1b7cc8a24b.png)
 
 ## Project setup
 ```
