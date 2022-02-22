@@ -1,3 +1,4 @@
+<template>
    <div class="w-[450px] h-[600px] p-[10px] bg-[white] flex flex-col rounded-md overflow-auto">
     <!-- To do input start -->
      <div class="inline-flex justify-center">  
@@ -29,3 +30,37 @@
     </div>
   <!-- To do list end -->
    </div>
+</template>
+
+<script setup>
+
+  import { ref, reactive} from 'vue'
+
+  // New To do input Start
+  let newToDo = ref('');
+  //New To do input End
+
+  // To do list start 
+  const toDoList = reactive([]).reverse();
+  // To do list end 
+
+  // Add new to do item start
+  const addTask = () => {
+    if(newToDo.value != ''){
+      toDoList.unshift({
+      toDoItem: newToDo.value,
+      isComplate: false,
+    });
+    newToDo.value = '';
+    }
+  } 
+  // Add new to do item end
+
+  // Delet to do item start 
+  const deleteToDoItem = ( index ) => toDoList.splice(index, 1);
+  // Delet to do item end
+  
+   const itemComplete = ( index ) => {
+    toDoList[index].isComplate = !toDoList[index].isComplate 
+   }
+</script>
