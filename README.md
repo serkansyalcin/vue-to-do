@@ -1,4 +1,4 @@
-# vue-to-do-app
+# vue.js 3 Todo List Uygulaması
 
 ## Project setup
 ```
