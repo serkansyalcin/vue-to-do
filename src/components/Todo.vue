@@ -4,7 +4,7 @@
      <div class="inline-flex justify-center">  
          <input class="w-[300px] h-[50px] outline-0 border-solid border-2 border-[#444F60]" type="text" name="todo" v-model="newToDo" 
          @keyup.enter="addTask">
-         <button class="w-[80px] h-[50px] bg-[#444F60] text-white" @click="addTask">Send</button>
+         <button class="w-[80px] h-[50px] bg-[#444F60] text-white" @click="addTask">Ekle</button>
       </div>
     <!-- To do input end -->
     <!-- To do list start -->
@@ -19,10 +19,10 @@
        <div class="flex flex-col">
         <!-- Delet button start -->
           <button class="w-[90px] h-auto bg-[#444F60] text-white mb-px" @click="deleteToDoItem(index)">
-            Delet
+            Sil
         </button>
         <!-- Delet button end -->
-          <button class="w-[90px] h-auto bg-[#444F60] text-white" @click="itemComplete(index)">complete</button>
+          <button class="w-[90px] h-auto bg-[#444F60] text-white" @click="itemComplete(index)">Tamamlandı</button>
        </div>
     </li>
   </ul>
